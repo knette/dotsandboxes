@@ -1,10 +1,43 @@
 #game-grid{
     border: 1px solid #bbb;
+    height: 500px;
+    width: 320px;
+    margin: 30px auto;
 }
 .dot{
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     background-color: #bbb;
     border-radius: 50%;
-    display: inline-block;
+    float: left;
+}
+#row1 #row3{
+    height: 11px;
+    width: 310px;
+    float: left;
+}
+.line{
+    border: 1px solid black;
+    height: 8px;
+    width: 50px;
+    float: left;
+}
+.line:hover{
+    background-color: #bbb;
+}
+.vert-line{
+    width: 8px;
+    height: 50px;
+    border: 1px solid black;
+    float: left;
+}
+.box{
+    width: 51px;
+    height: 50px;
+    float: left;
+}
+#row2{
+    height: 55px;
+    width: 310px;
+    float: left;
 }
