@@ -1,7 +1,6 @@
 body{
     font-family: 'Playfair Display', serif;
 }
-
 #game-grid{
     border: 1px solid #bbb;
     height: 500px;
@@ -21,20 +20,21 @@ body{
     float: left;
 }
 .line{
-    border: 1px solid black;
-    height: 9px;
-    width: 49px;
+    background-color: #FFDDCE;
+    height: 11px;
+    width: 51px;
     float: left;
+    border-radius: 20%;
 }
 .line:hover{
-    background-color: #FFDDCE;
+    background-color: #6F73CC;
 }
 .vert-line{
     width: 10px;
     height: 52px;
-    border-radius: 10%;
+    border-radius: 20%;
     float: left;
-    background-color: violet;
+    background-color: #FFDDCE;
 }
 .box{
     width: 51px;
@@ -47,5 +47,8 @@ body{
     float: left;
 }
 .vert-line:hover{
-    background-color: #FFDDCE;
+    background-color: #6F73CC;
+}
+#score-p1 #score-p2 {
+    display: inline-block;
 }
