@@ -1,3 +1,7 @@
+body{
+    font-family: 'Playfair Display', serif;
+}
+
 #game-grid{
     border: 1px solid #bbb;
     height: 500px;
