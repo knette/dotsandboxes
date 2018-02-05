@@ -7,7 +7,7 @@
 .dot{
     height: 10px;
     width: 10px;
-    background-color: #bbb;
+    background-color: #6F73CC;
     border-radius: 50%;
     float: left;
 }
@@ -23,7 +23,7 @@
     float: left;
 }
 .line:hover{
-    background-color: #bbb;
+    background-color: #FFDDCE;
 }
 .vert-line{
     width: 10px;
@@ -41,4 +41,7 @@
     height: 55px;
     width: 320px;
     float: left;
+}
+.vert-line:hover{
+    background-color: #FFDDCE;
 }
