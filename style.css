@@ -18,18 +18,19 @@
 }
 .line{
     border: 1px solid black;
-    height: 8px;
-    width: 50px;
+    height: 9px;
+    width: 49px;
     float: left;
 }
 .line:hover{
     background-color: #bbb;
 }
 .vert-line{
-    width: 8px;
-    height: 50px;
-    border: 1px solid black;
+    width: 10px;
+    height: 52px;
+    border-radius: 10%;
     float: left;
+    background-color: violet;
 }
 .box{
     width: 51px;
@@ -38,6 +39,6 @@
 }
 #row2{
     height: 55px;
-    width: 310px;
+    width: 320px;
     float: left;
 }
