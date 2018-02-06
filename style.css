@@ -13,7 +13,7 @@ body{
     border-radius: 50%;
     float: left;
 }
-#row1, #row3, #row5{
+#row1, #row3, #row5, #row7{
     height: 11px;
     width: 320px;
     float: left;
@@ -23,7 +23,7 @@ body{
     height: 11px;
     width: 51px;
     float: left;
-    border-radius: 20%;
+    border-radius: 25%;
 }
 .line:hover, .vert-line:hover {
     background-color: #6F73CC;
@@ -31,7 +31,7 @@ body{
 .vert-line{
     width: 10px;
     height: 52px;
-    border-radius: 20%;
+    border-radius: 25%;
     float: left;
     background-color: #FFDDCE;
 }
@@ -56,3 +56,4 @@ body{
 }
 .player2won{
     background-color: yellowgreen;
+}

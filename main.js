@@ -32,7 +32,7 @@ var game = {
 function clickHandler() {
     $(this).addClass('clicked')
     game.switchPlayer()
-    for (i = 1; i < 6; i++) {
+    for (i = 1; i < 11; i++) {
        if ($('.box' + i + '.clicked').length === 4){
            $('.hotbox' + i).addClass('player1won')
        }
