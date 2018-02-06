@@ -21,7 +21,7 @@ var game = {
             game.currentPlayer = game.players[0]
             playersTurn = game.players[0]
         }
-        playersTurn = currentPlayer
+        playersTurn = game.currentPlayer
     }
 }
 
@@ -32,8 +32,8 @@ function clickHandler() {
     $(this).addClass('clicked')
     if ($('.box1.clicked').length === 4) {
         $('.hotbox1').css('background-color', 'blue')
-        $score.text = parseInt($score.text()) + 1
-        switchPlayer()
+        $score.text(parseInt($score.text()) + 1)
+        game.switchPlayer()
     }
 }
 $line.on('click', clickHandler)
