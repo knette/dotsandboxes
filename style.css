@@ -1,5 +1,6 @@
 body{
     font-family: 'Playfair Display', serif;
+    background-color: #DAE8E4;
 }
 #game-grid{
     height: 500px;
@@ -19,7 +20,7 @@ body{
     float: left;
 }
 .line{
-    background-color: #FFDDCE;
+    background-color: #D1D1D1;
     height: 11px;
     width: 51px;
     float: left;
@@ -33,7 +34,7 @@ body{
     height: 52px;
     border-radius: 25%;
     float: left;
-    background-color: #FFDDCE;
+    background-color: #D1D1D1;
 }
 .box{
     width: 51px;
@@ -47,13 +48,14 @@ body{
 }
 #score-p1, #score-p2, h1 {
     margin: 0 auto;
+    text-align: center;
 }
 .clicked{
-    background-color: red;
+    background-color: goldenrod;
 }
-.player1won{
-    background-color: blue;
+.player1won, #score-p1{
+    background-color: #8A4FFF;
 }
-.player2won{
-    background-color: yellowgreen;
+.player2won, #score-p2{
+    background-color: #C3BEF7;
 }

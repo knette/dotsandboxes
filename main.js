@@ -26,8 +26,6 @@ var game = {
     }
 }
 
-//when a line is clicked its color changes
-//if all 4 sides of box1 are not the color they started as
 //update inside box color to players color
 function clickHandler() {
     $(this).addClass('clicked')
@@ -37,10 +35,11 @@ function clickHandler() {
            $('.hotbox' + i).addClass('player1won')
        }
     }
+    $scorePlayer1.text($('.box.player1won').length)
+    $scorePlayer2.text($('.box.player2won').length)
 }
-    //if ($('.box1.clicked').length === 4) { //+if number of blue boxes = 1 score is 1
-      //  $('.hotbox1').addClass('player1won')
-        //$scorePlayer1.text($('.box.player1won').length)
+
+
 
 $line.on('click', clickHandler)
 $vertLine.on('click', clickHandler)
