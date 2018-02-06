@@ -25,7 +25,10 @@ body{
     float: left;
     border-radius: 20%;
 }
-.line:hover{
+.line:hover {
+    background-color: #6F73CC;
+}
+.vert-line:hover{
     background-color: #6F73CC;
 }
 .vert-line{
@@ -45,12 +48,14 @@ body{
     width: 320px;
     float: left;
 }
-.vert-line:hover{
-    background-color: #6F73CC;
-}
 #score-p1 #score-p2 {
     display: inline-block;
 }
 .clicked{
     background-color: red;
 }
+.player1won{
+    background-color: blue;
+}
+.player2won{
+    background-color: yellowgreen;
