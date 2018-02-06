@@ -13,9 +13,9 @@ body{
     border-radius: 50%;
     float: left;
 }
-#row1 #row3{
+#row1, #row3, #row5{
     height: 11px;
-    width: 310px;
+    width: 320px;
     float: left;
 }
 .line{
@@ -45,7 +45,7 @@ body{
     width: 320px;
     float: left;
 }
-#score-p1 #score-p2 {
+#score-p1, #score-p2 {
     display: inline-block;
 }
 .clicked{
