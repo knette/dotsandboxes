@@ -3,7 +3,7 @@ var $vertLine = $('.vert-line')
 var $box1 = $('.box1') 
 var $scorePlayer1 = $('#score-player1')
 var $scorePlayer2 = $('#score-player2')
-var playersTurn = $('#players-turn').text()
+var playersTurn = $('#players-turn')
 //update above to players score instead of player 1.
 
 var game = {
@@ -18,12 +18,11 @@ var game = {
         if (game.currentPlayer === game.players[0]) {
             //if score increases player stays the same
             game.currentPlayer = game.players[1]
-            playersTurn = game.players[1]
+            playersTurn.text(game.currentPlayer.name)
         } else {
             game.currentPlayer = game.players[0]
-            playersTurn = game.players[0]
+            playersTurn.text(game.currentPlayer.name)
         }
-        playersTurn = game.currentPlayer
     }
 }
 
@@ -32,11 +31,11 @@ var game = {
 //update inside box color to players color
 function clickHandler() {
     $(this).addClass('clicked')
+    game.switchPlayer()
     //+remove hover
     if ($('.box1.clicked').length === 4) { //+if number of blue boxes = 1 score is 1
         $('.hotbox1').addClass('player1won')
         //$score.text(parseInt($score.text()) + 1)
-        game.switchPlayer()
         $scorePlayer1.text($('.box.player1won').length)
     }
 }
