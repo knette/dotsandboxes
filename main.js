@@ -25,21 +25,20 @@ var game = {
         }
     }
 }
-
-//update inside box color to players color
+//On each click of a line, change the color and the player
+//unless the player wins the box. If the player wins the
+//box update the inside of the box to their color. 
+//++update inside box color to players color
 function clickHandler() {
     $(this).addClass('clicked')
-    game.switchPlayer()
     for (i = 1; i < 26; i++) {
-       if ($('.box' + i + '.clicked').length === 4){
-           $('.hotbox' + i).addClass('player1won')
-       }
+        if ($('.box' + i + '.clicked').length === 4){
+            $('.hotbox' + i).addClass('player1won')
+        } else (game.switchPlayer())
     }
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
 }
-
-
 
 $line.on('click', clickHandler)
 $vertLine.on('click', clickHandler)

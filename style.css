@@ -24,7 +24,7 @@ body{
     height: 11px;
     width: 51px;
     float: left;
-    border-radius: 25%;
+    border-radius: 20%;
 }
 .line:hover, .vert-line:hover {
     background-color: #6F73CC;
@@ -32,7 +32,7 @@ body{
 .vert-line{
     width: 10px;
     height: 52px;
-    border-radius: 25%;
+    border-radius: 20%;
     float: left;
     background-color: #D1D1D1;
 }
@@ -58,4 +58,8 @@ body{
 }
 .player2won, #score-p2{
     background-color: #C3BEF7;
+}
+#score-p1, #score-p2 {
+    width: 200px;
+    border-radius: 35%; 
 }
