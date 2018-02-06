@@ -32,13 +32,16 @@ var game = {
 function clickHandler() {
     $(this).addClass('clicked')
     game.switchPlayer()
-    //+remove hover
-    if ($('.box1.clicked').length === 4) { //+if number of blue boxes = 1 score is 1
-        $('.hotbox1').addClass('player1won')
-        //$score.text(parseInt($score.text()) + 1)
-        $scorePlayer1.text($('.box.player1won').length)
+    for (i = 1; i < 6; i++) {
+       if ($('.box' + i + '.clicked').length === 4){
+           $('.hotbox' + i).addClass('player1won')
+       }
     }
 }
+    //if ($('.box1.clicked').length === 4) { //+if number of blue boxes = 1 score is 1
+      //  $('.hotbox1').addClass('player1won')
+        //$scorePlayer1.text($('.box.player1won').length)
+
 $line.on('click', clickHandler)
 $vertLine.on('click', clickHandler)
 

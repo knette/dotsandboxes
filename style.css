@@ -25,10 +25,7 @@ body{
     float: left;
     border-radius: 20%;
 }
-.line:hover {
-    background-color: #6F73CC;
-}
-.vert-line:hover{
+.line:hover, .vert-line:hover {
     background-color: #6F73CC;
 }
 .vert-line{
