@@ -6,7 +6,7 @@ body{
     background-color: #a8ffad;
 }
 #game-grid{
-    height: 500px;
+    height: 400px;
     width: 320px;
     margin: 30px auto;
 }
@@ -25,11 +25,11 @@ body{
 .vert-line, .line {
     background-color: rgb(235, 235, 235);
     float: left;
+    border-radius: 20%;
 }
 .line{
     height: 11px;
     width: 51px;
-    border-radius: 20%;
 }
 .line:hover, .vert-line:hover {
     background-color: rgb(141, 144, 196);
@@ -37,7 +37,6 @@ body{
 .vert-line{
     width: 10px;
     height: 52px;
-    border-radius: 20%;
 }
 .box{
     width: 51px;
@@ -65,4 +64,9 @@ body{
 #score-p1, #score-p2 {
     width: 200px;
     border-radius: 45%; 
+}
+.game-over{
+    color: red;
+    background-color: black;
+    font-size: 25px;
 }
