@@ -49,7 +49,7 @@ body{
     width: 320px;
     float: left;
 }
-#score-p1, #score-p2, h1, #players-turn-text {
+#score-p1, #score-p2, h1, #players-turn-text, footer {
     margin: 0 auto;
     text-align: center;
 }

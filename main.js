@@ -4,7 +4,6 @@ var $box1 = $('.box1')
 var $scorePlayer1 = $('#score-player1')
 var $scorePlayer2 = $('#score-player2')
 var playersTurn = $('#players-turn')
-//update above to players score instead of player 1.
 
 var game = {
     players: [{name: 'Player 1'}, {name: 'Player 2'}],
@@ -20,23 +19,28 @@ var game = {
             game.currentPlayer = game.players[0]
             playersTurn.text(game.currentPlayer.name)
         }
+    },
+    checkWinner: function() {
+        if ($('.clicked').length === 60) {
+            if ((parseInt($scorePlayer1.text())) > (parseInt($scorePlayer2.text()))) {
+           alert("Game Over! Winner: Player 1")
+        } else (alert("Game Over! Winner: Player 2"))
+    }
     }
 }
 //On each click of a line, change the color and the player
     //unless the player wins the box. If the player wins the
     //box update the inside of the box to their color. 
-//++update inside box color to players color
 function clickHandler() {
     $(this).addClass('clicked')
     console.log(game.currentPlayer.name)
-    for (i = 1; i < 25; i++) {
+    console.log((parseInt($scorePlayer1.text())) + (parseInt($scorePlayer2.text())))
+    for (i = 1; i < 26; i++) {
         if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 1')){
             if(!$('.hotbox' + i).hasClass('player2won') && !$('.hotbox' + i).hasClass('player1won')) {
               $('.hotbox' + i).addClass('player1won') 
               game.switchPlayer()
             }
-            
-            //if hotboxi doesnt have a class player2won add class of player1won
         } else if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 2')){
             if(!$('.hotbox' + i).hasClass('player1won') && !$('.hotbox' + i).hasClass('player2won')) {
                 $('.hotbox' + i).addClass('player2won') 
@@ -45,7 +49,7 @@ function clickHandler() {
         }     
     }
     game.switchPlayer()
-    
+    game.checkWinner()
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
 }
