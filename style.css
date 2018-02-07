@@ -31,7 +31,7 @@ body{
     height: 11px;
     width: 51px;
 }
-.line:hover, .vert-line:hover {
+.line:not(.no-hover):hover, .vert-line:not(.no-hover):hover {
     background-color: rgb(141, 144, 196);
 }
 .vert-line{
@@ -69,4 +69,6 @@ body{
     color: red;
     background-color: black;
     font-size: 25px;
+    width: 400px;
+    border-radius: 20%; 
 }

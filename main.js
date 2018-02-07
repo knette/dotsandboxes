@@ -45,6 +45,7 @@ var game = {
     //box update the inside of the box to their color. 
 function clickHandler() {
     $(this).addClass('clicked')
+    $(this).addClass('no-hover')
     console.log(game.currentPlayer.name)
     for (i = 1; i < 26; i++) {
         if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 1')){
