@@ -21,6 +21,7 @@ body{
     height: 11px;
     width: 320px;
     float: left;
+    margin: -1px;
 }
 .vert-line, .line {
     background-color: rgb(235, 235, 235);
@@ -44,7 +45,6 @@ body{
     float: left;
 }
 #row2{
-    height: 55px;
     width: 320px;
     float: left;
 }
@@ -53,7 +53,7 @@ body{
     text-align: center;
 }
 .clicked{
-    background-color: goldenrod;
+    background-color: rgb(124, 123, 123);
 }
 .player1won, #score-p1{
     background-color: #8A4FFF;
@@ -66,9 +66,9 @@ body{
     border-radius: 45%; 
 }
 .game-over{
-    color: red;
+    color: rgba(251, 255, 0, 0.733);
     background-color: black;
-    font-size: 25px;
+    font-size: 35px;
     width: 400px;
-    border-radius: 20%; 
+    border-radius: 20%;
 }
