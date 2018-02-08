@@ -34,7 +34,7 @@ var game = {
         }
     },
     checkWinner: function() {
-        if ($('.clicked').length === 5) {                                              //when all lines are clicked run, check and show winner
+            if ($('.clicked').length === 60) {                                              //when all lines are clicked run, check and show winner
             if ((parseInt($scorePlayer1.text())) > (parseInt($scorePlayer2.text()))) { //when player 1 score is higher player 1 wins
                 player1Wins()
             }
