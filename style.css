@@ -1,6 +1,7 @@
 body{
     font-family: 'Playfair Display', serif;
-    background-color: #DAE8E4;
+    background-color: #dae8e4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%238d63d0' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 ::selection{
     background-color: #a8ffad;
@@ -57,9 +58,12 @@ body{
 }
 .player1won, #score-p1{
     background-color: #8A4FFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239c92ac' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 .player2won, #score-p2{
     background-color: #C3BEF7;
+    background-color: #c3bef7;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239c92ac' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 #score-p1, #score-p2 {
     width: 200px;

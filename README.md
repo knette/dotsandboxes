@@ -17,7 +17,7 @@ As a player, I know its my turn because it is listed on the page.
 
 As a player, I click on a line for my move. 
 
-As a player, I get another turn after complete a box (click on the 4th line of a box). 
+As a player, I get another turn after I complete a box (click on the 4th line of a box). 
 
 As a player, I know I've won because it is announced clearly. 
 
@@ -42,3 +42,4 @@ as a player, I'd like to play against the computer when I dont have a friend aro
 4. [Color Scheme](https://coolors.co/d1d1d1-dae8e4-7d8186-c3bef7-8a4fff)
 5. [selection color](https://css-tricks.com/overriding-the-default-text-selection-color-with-css/)
 6. [modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+7. [background texture](http://www.heropatterns.com/)

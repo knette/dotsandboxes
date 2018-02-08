@@ -57,7 +57,7 @@ function clickHandler() {
     $(this).addClass('clicked no-hover') // when line is clicked take away over and change color 
     var p1Boxes = $('.player1won').length  //variable for each player to keep number of boxes already won 
     var p2Boxes = $('.player2won').length  
-    for (i = 1; i < 26; i++) {              //loop through all 25 boxes 
+    for (i = 1; i < 26; i++) {              //check if any of the 25 boxes were completed, if so change the inner color. 
         if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 1')){
             if(!$('.hotbox' + i).hasClass('player2won') && !$('.hotbox' + i).hasClass('player1won')) {
               $('.hotbox' + i).addClass('player1won') 
@@ -75,6 +75,7 @@ function clickHandler() {
     game.checkWinner()                                                               //check for winner every time a line is clicked
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
+    $(this).off('click')
 }
 
 $line.on('click', clickHandler)
