@@ -15,14 +15,18 @@ HTML and CSS was used to create and style the game grid while the game's interac
 
 As a player, I know its my turn because it is listed on the page. 
 
-As a player, I know I've won because its announced clearly. 
+As a player, I click on a line for my move. 
+
+As a player, I get another turn after complete a box (click on the 4th line of a box). 
+
+As a player, I know I've won because it is announced clearly. 
 
 #### +approach
 When I get started on a project all the ideas of features needed are flowing pretty heavily so a [trello](https://trello.com/b/xOyRntr1/dots-and-boxes) board proved to be quite useful to keep track of my to dos and moved them around as needed. 
 
 I started with one line of 5 boxes and built out the click handler functionality first then built out the rest of the game grid to 
 
-#### +planned features
+#### +planned user stories
 as a player, I would like to start a new game without refreshing the page. 
 
 as a player, I would like the lines/hover to be colored for my turns

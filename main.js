@@ -7,7 +7,7 @@ var playersTurn = $('#players-turn')
 var winnersText = $('.players-turn-text')
 
 function player1Wins() {
-    winnersText.text("Winner: Player 1")                                         // text updated to player 1
+    winnersText.text("Winner: Player 1")                                         // text updated to show player 1 wins
     winnersText.addClass('game-over')                                            // class added to update CSS
     $('.modal, .modal-end').css({"display": "block"})                            // show modal 
 }
@@ -19,6 +19,7 @@ function player2Wins() {
 
 var game = {
     players: [{name: 'Player 1'}, {name: 'Player 2'}],
+    gridSize: [25, 9, 16, 4],
     currentPlayer: null,
     init: function() {
         game.currentPlayer = game.players[0]
@@ -56,7 +57,7 @@ function clickHandler() {
     $(this).addClass('clicked no-hover') // when line is clicked take away over and change color 
     var p1Boxes = $('.player1won').length  //variable for each player to keep number of boxes already won 
     var p2Boxes = $('.player2won').length  
-    for (i = 1; i < 26; i++) {
+    for (i = 1; i < 26; i++) {              //loop through all 25 boxes 
         if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 1')){
             if(!$('.hotbox' + i).hasClass('player2won') && !$('.hotbox' + i).hasClass('player1won')) {
               $('.hotbox' + i).addClass('player1won') 
@@ -70,8 +71,8 @@ function clickHandler() {
     }
     if (p1Boxes === $('.player1won').length && p2Boxes === $('.player2won').length ) {  //switch player when clicked and when  
         game.switchPlayer()                                                          // neither player has finished a box. 
-    }                                                                            // when they finish a box do not switch player
-    game.checkWinner()                                                             //check for winner every time a line is clicked
+    }                                                                                // when they finish a box do not switch player
+    game.checkWinner()                                                               //check for winner every time a line is clicked
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
 }
