@@ -26,20 +26,20 @@ var game = {
             if ((parseInt($scorePlayer1.text())) > (parseInt($scorePlayer2.text()))) {
            winnersText.text("Winner: Player 1")
            winnersText.addClass('game-over')
-           $('.modal-end').css({"display": "block"}) 
+           $('.modal, .modal-end').css({"display": "block"}) 
             }
             else if ((parseInt($scorePlayer1.text())) === (parseInt($scorePlayer2.text()))) {
                 if (game.currentPlayer === game.players[0]) {
                     winnersText.text("Winner: Player 2")
                     winnersText.addClass('game-over')
-                    $('.modal-end').css({"display": "block"}) 
+                    $('.modal, .modal-end').css({"display": "block"}) 
                 } else { winnersText.text("Winner: Player 1") 
                          winnersText.addClass('game-over')}
-                         $('.modal-end').css({"display": "block"}) 
+                         $('.modal, .modal-end').css({"display": "block"}) 
             }
             else { winnersText.text("Game Over! Winner: Player 2")
                    winnersText.addClass('game-over')
-                   $('.modal-end').css({"display": "block"})
+                   $('.modal, .modal-end').css({"display": "block"}) 
                 }
         }
 }
