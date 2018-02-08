@@ -1,5 +1,7 @@
 # Dots & Boxes
 
+![alt text](https://github.com/knette/dotsandboxes/images/IMG_0627.jpg)
+
 ## How to Play
 From Wikipedia: Starting with an empty grid of dots, two players take turns adding a single horizontal or vertical line between two dots. The player who completes the fourth side of a 1×1 box earns one point and takes another turn. The game ends when no more lines can be placed. The winner is the player with the most points.
 
@@ -42,3 +44,4 @@ as a player, I'd like to play against the computer when I dont have a friend aro
 4. [Color Scheme](https://coolors.co/d1d1d1-dae8e4-7d8186-c3bef7-8a4fff)
 5. [selection color](https://css-tricks.com/overriding-the-default-text-selection-color-with-css/)
 6. [modal](https://www.w3schools.com/howto/howto_css_modals.asp)
+7. [background texture](http://www.heropatterns.com/)
