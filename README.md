@@ -22,9 +22,6 @@ When I get started on a project all the ideas of features needed are flowing pre
 
 I started with one line of 5 boxes and built out the click handler functionality first then built out the rest of the game grid to 
 
-#### +unsolved problems
-1. when you close two boxes in one move the points are split between players. 
-
 #### +planned features
 as a player, I would like to start a new game without refreshing the page. 
 

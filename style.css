@@ -6,9 +6,9 @@ body{
     background-color: #a8ffad;
 }
 #game-grid{
-    height: 400px;
+    height: 380px;
     width: 320px;
-    margin: 30px auto;
+    margin: 30px auto 0px;
 }
 .dot{
     height: 10px;
@@ -66,8 +66,6 @@ body{
     border-radius: 45%; 
 }
 .game-over{
-    color: rgba(251, 255, 0, 0.733);
-    background-color: black;
     font-size: 35px;
     width: 400px;
     border-radius: 20%;
@@ -75,6 +73,7 @@ body{
 .players-turn-text{
     font-size: 20px;
     font-weight: bold;
+    color:  rgb(73, 73, 73);
 }
 .modal-end {
     display: none;
