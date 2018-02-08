@@ -75,7 +75,7 @@ function clickHandler() {
     game.checkWinner()                                                               //check for winner every time a line is clicked
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
-    $(this).off('click')
+    $(this).off('click')                                                            //turn off click on line so that it doesnt keep changing players
 }
 
 $line.on('click', clickHandler)
