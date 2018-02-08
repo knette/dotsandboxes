@@ -22,7 +22,7 @@ var game = {
         }
     },
     checkWinner: function() {
-        if ($('.clicked').length === 4) {
+        if ($('.clicked').length === 60) {
             if ((parseInt($scorePlayer1.text())) > (parseInt($scorePlayer2.text()))) {
            winnersText.text("Winner: Player 1")
            winnersText.addClass('game-over')
@@ -51,20 +51,28 @@ function clickHandler() {
     $(this).addClass('clicked')
     $(this).addClass('no-hover')
     console.log(game.currentPlayer.name)
+    //variable that counts number of classes for the boxes players have won 
+    var p1Boxes = $('.player1won').length
+    var p2Boxes = $('.player2won').length
+    console.log(p2Boxes)
     for (i = 1; i < 26; i++) {
         if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 1')){
             if(!$('.hotbox' + i).hasClass('player2won') && !$('.hotbox' + i).hasClass('player1won')) {
               $('.hotbox' + i).addClass('player1won') 
-              game.switchPlayer()
             }
+            
         } else if (($('.box' + i + '.clicked').length === 4) && (game.currentPlayer.name === 'Player 2')){
             if(!$('.hotbox' + i).hasClass('player1won') && !$('.hotbox' + i).hasClass('player2won')) {
                 $('.hotbox' + i).addClass('player2won') 
-                game.switchPlayer() 
               }
-        }     
+        }    
     }
-    game.switchPlayer()
+
+    console.log(p1Boxes === $('.player1won').length)
+    console.log(p2Boxes === $('.player2won').length)
+    if (p1Boxes === $('.player1won').length && p2Boxes === $('.player2won').length ) {
+        game.switchPlayer()
+    }
     game.checkWinner()
     $scorePlayer1.text($('.box.player1won').length)
     $scorePlayer2.text($('.box.player2won').length)
@@ -74,3 +82,8 @@ $line.on('click', clickHandler)
 $vertLine.on('click', clickHandler)
 
 game.init()
+
+
+$('.modal').on('click', function() {
+    $('.modal').css("display", "none")
+})

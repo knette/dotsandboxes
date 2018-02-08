@@ -78,11 +78,11 @@ body{
 }
 .modal-end {
     display: none;
-    background-color: #fefefea6;
+    background-color: white;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid black;
-    width: 80%; 
+    border: 2px solid black;
+    width: 60%; 
 }
 .modal {
     display: none;
