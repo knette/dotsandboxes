@@ -17,7 +17,7 @@ As a player, I know its my turn because it is listed on the page.
 
 As a player, I click on a line for my move. 
 
-As a player, I get another turn after complete a box (click on the 4th line of a box). 
+As a player, I get another turn after I complete a box (click on the 4th line of a box). 
 
 As a player, I know I've won because it is announced clearly. 
 
