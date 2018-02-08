@@ -4,7 +4,7 @@ var $box1 = $('.box1')
 var $scorePlayer1 = $('#score-player1')
 var $scorePlayer2 = $('#score-player2')
 var playersTurn = $('#players-turn')
-var winnersText = $('#players-turn-text')
+var winnersText = $('.players-turn-text')
 
 var game = {
     players: [{name: 'Player 1'}, {name: 'Player 2'}],
@@ -22,20 +22,24 @@ var game = {
         }
     },
     checkWinner: function() {
-        if ($('.clicked').length === 60) {
+        if ($('.clicked').length === 4) {
             if ((parseInt($scorePlayer1.text())) > (parseInt($scorePlayer2.text()))) {
-           winnersText.text("Game Over! Winner: Player 1")
+           winnersText.text("Winner: Player 1")
            winnersText.addClass('game-over')
+           $('.modal-end').css({"display": "block"}) 
             }
             else if ((parseInt($scorePlayer1.text())) === (parseInt($scorePlayer2.text()))) {
                 if (game.currentPlayer === game.players[0]) {
-                    winnersText.text("Game Over! Winner: Player 2")
+                    winnersText.text("Winner: Player 2")
                     winnersText.addClass('game-over')
-                } else { winnersText.text("Game Over! Winner: Player 1") 
+                    $('.modal-end').css({"display": "block"}) 
+                } else { winnersText.text("Winner: Player 1") 
                          winnersText.addClass('game-over')}
+                         $('.modal-end').css({"display": "block"}) 
             }
             else { winnersText.text("Game Over! Winner: Player 2")
                    winnersText.addClass('game-over')
+                   $('.modal-end').css({"display": "block"})
                 }
         }
 }

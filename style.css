@@ -48,7 +48,7 @@ body{
     width: 320px;
     float: left;
 }
-#score-p1, #score-p2, h1, #players-turn-text, footer {
+#score-p1, #score-p2, h1, .players-turn-text, footer {
     margin: 0 auto;
     text-align: center;
 }
@@ -71,4 +71,27 @@ body{
     font-size: 35px;
     width: 400px;
     border-radius: 20%;
+}
+.players-turn-text{
+    font-size: 20px;
+    font-weight: bold;
+}
+.modal-end {
+    display: none;
+    background-color: #fefefea6;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%; 
+}
+.modal {
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.8);
 }
