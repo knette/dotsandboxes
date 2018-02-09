@@ -1,6 +1,6 @@
 # Dots & Boxes
 
-![alt text](https://github.com/knette/dotsandboxes/images/IMG_0627.jpg)
+![alt text](https://raw.githubusercontent.com/knette/dotsandboxes/master/images/IMG_0627.jpg)
 
 ## How to Play
 From Wikipedia: Starting with an empty grid of dots, two players take turns adding a single horizontal or vertical line between two dots. The player who completes the fourth side of a 1×1 box earns one point and takes another turn. The game ends when no more lines can be placed. The winner is the player with the most points.
